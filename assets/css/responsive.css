@@ -116,7 +116,7 @@
     .subs__list,
     .features__tab__img img {
         margin: 0 auto;
-        display: block;
+        display: block !important;
     }
 
     .subs__strike,
@@ -157,7 +157,7 @@
     }
 
     .brand__icon {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .brand__icon__title {
@@ -188,8 +188,11 @@
     }
 
     .contact__form .d-flex .w-50 {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding: 0 !important;
+    }
+
+    .contact__area {
+        margin-top: 10px !important;
     }
 
     .contact__input div {
@@ -225,6 +228,15 @@
         display: flex;
         flex-direction: column;
     }
+
+    .standard__list.w-50.px-4,
+    .brand__icon.px-4 {
+        padding: 0 !important;
+    }
+
+    .brand__title span.brand__tip {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -232,18 +244,193 @@
         flex-direction: column;
     }
 
-    .hero__form {
+    .hero__form,
+    .features__1 {
         display: none;
+    }
+
+    .features__2 {
+        display: block !important;
+    }
+
+    .features__2 ul {
+        justify-content: center;
     }
 
     .hero__title {
         font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .features__tabs {
+        padding: 10px !important;
+        font-size: 12px;
+    }
+
+    .hero__text img {
+        width: 60px;
+    }
+
+    .hero__strike,
+    .features__tab__content__2,
+    .features__tab__content__3 {
+        margin-top: 10px;
+    }
+
+    .features__tab__content__3 {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .tab-content .tab-pane h5 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .tab-content .tab-pane span {
+        font-size: 12px;
+    }
+
+    .hero__content {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .hero__button button,
+    .design__button button,
+    .contact__send button {
+        padding: 10px 20px;
+        font-size: 12px;
     }
 
     .hero__text,
     .hero__form {
         width: 100%;
     }
+
+    .features,
+    .standard,
+    .contact,
+    .subs,
+    .brand {
+        padding: 30px 0;
+    }
+
+    header nav {
+        position: fixed;
+        top: -100rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background-color: #000;
+        border-radius: .5rem;
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .3);
+        z-index: 1000;
+        transition: .75s linear;
+        opacity: 0;
+    }
+
+    header .nav-toggle {
+        top: 5rem;
+        opacity: 1;
+        transition: .75s linear;
+    }
+
+    .nav__list,
+    .subs__res {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .pe-7s-menu {
+        display: block !important;
+    }
+
+    .w-50,
+    .w-90,
+    .subs__list span:nth-child(3),
+    .subs__title span,
+    .standard__list span:nth-child(3),
+    .standard__list span:nth-child(4) {
+        width: 100% !important;
+    }
+
+    .subs__list h5,
+    .standard__list h5,
+    .brand__strike {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .standard__list {
+        padding: 0 !important;
+    }
+
+    .subs__strike,
+    .design__strike,
+    .contact__strike {
+        margin: 0 auto;
+    }
+
+    .subs__lists,
+    .subs__lists li:nth-child(2),
+    .subs__list span:nth-child(3),
+    .standard__list span:nth-child(3),
+    .standard__list span:nth-child(4),
+    .brand__strike,
+    .brand__icon,
+    .design__title span,
+    .design__button button,
+    .contact__form,
+    .contact__send button {
+        margin-top: 10px;
+    }
+
+    .standard__list span:nth-child(3),
+    .brand__title span.brand__tip {
+        font-size: 12px;
+    }
+
+    .brand__title h3,
+    .design__title h3,
+    .contact__title h3 {
+        font-size: 18px;
+    }
+
+    .brand__icon__title {
+        margin: 15px 0;
+    }
+
+    .brand__icon__title {
+        font-size: 16px;
+    }
+
+    .brand__icon {
+        padding: 0 10px !important;
+    }
+
+    .design__title {
+        width: 70%;
+    }
+
+    .design__title span,
+    .form-control,
+    textarea::placeholder,
+    .footer__coppyright {
+        font-size: 12px;
+        display: block;
+    }
+
+    .contact__strike {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer ul li img {
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -419,6 +606,17 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .subs__lists li {}
+
+    .subs__lists,
+    .subs__lists li:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .subs__strike {
+        margin: 15px 0;
+    }
+}
 
 @media (min-width: 1200px) {}

@@ -82,8 +82,9 @@ header .pe-7s-menu {
 }
 
 .hero__target {
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .hero__title {
@@ -293,7 +294,7 @@ textarea.w-100 {
 }
 
 .subs__list span:nth-child(3) {
-    width: 70%;
+    width: 90%;
     display: block;
 }
 
@@ -307,7 +308,7 @@ textarea.w-100 {
 }
 
 .subs__list {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-top: -10px;
 }
 
@@ -351,12 +352,11 @@ textarea.w-100 {
     font-family: "Raleway" !important;
 }
 
-.brand__title {
+.brand__title h3 {
     font-size: 36px;
     line-height: 43px;
     color: #212121;
     font-weight: 400;
-    text-align: center;
 }
 
 .brand__strike,
@@ -368,7 +368,7 @@ textarea.w-100 {
     margin-bottom: 20px;
 }
 
-.brand__title span:nth-child(3) {
+.brand__title span.brand__tip {
     font-size: 14px;
     line-height: 20px;
     color: #86878b;

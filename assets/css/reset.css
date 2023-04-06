@@ -163,7 +163,7 @@ textarea {
 }
 
 textarea::placeholder {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 /**
@@ -482,4 +482,13 @@ textarea {
 .navbar {
     display: block !important;
     padding: 0 !important;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
 }

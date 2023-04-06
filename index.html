@@ -37,8 +37,8 @@
         <div class="hero__hero">
             <img src="./assets/imgs/hero.png" alt="" class="hero__img design__1">
             <img src="./assets/imgs/hero_mobile.png" alt="" class="hero__img d-none design__2">
-            <div class="container">
-                <div class="position-absolute hero__target d-flex">
+            <div class="">
+                <div class="container d-flex hero__target position-absolute ">
                     <div class="hero__text">
                         <img src="./assets/imgs/logo.png" alt="" class="hero__logo">
                         <h5 class="hero__title text-white">MODERN AXURE
@@ -314,40 +314,42 @@
                     <div class="subs__img w-50">
                         <img src="./assets/imgs/subs.png" alt="">
                     </div>
-                    <div class="subs__list w-50">
-                        <h5>Sub list section</h5>
-                        <span class="strike subs__strike"></span>
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                            accumsan et viverra justo commodo.
-                        </span>
-                        <ul class="subs__lists">
-                            <li class="d-flex">
-                                <div class="circle subs__circle d-flex align-items-center justify-content-center">
-                                    <i class="pegk pe-7s-cloud-upload"></i>
-                                </div>
-                                <div class="subs__title">
-                                    <p>Title</p>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aenean euismod bibendum laoreet.
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="d-flex">
-                                <div class="circle subs__circle d-flex align-items-center justify-content-center">
-                                    <i class="pegk pe-7s-cloud-upload"></i>
-                                </div>
-                                <div class="subs__title">
-                                    <p>Title</p>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aenean euismod bibendum laoreet.
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="subs__list w-50 d-flex justify-content-end">
+                        <div class="w-90">
+                            <h5>Sub list section</h5>
+                            <span class="strike subs__strike"></span>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                                accumsan et viverra justo commodo.
+                            </span>
+                            <ul class="subs__lists">
+                                <li class="d-flex">
+                                    <div class="circle subs__circle d-flex align-items-center justify-content-center">
+                                        <i class="pegk pe-7s-cloud-upload"></i>
+                                    </div>
+                                    <div class="subs__title">
+                                        <p>Title</p>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aenean euismod bibendum laoreet.
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="circle subs__circle d-flex align-items-center justify-content-center">
+                                        <i class="pegk pe-7s-cloud-upload"></i>
+                                    </div>
+                                    <div class="subs__title">
+                                        <p>Title</p>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Aenean euismod bibendum laoreet.
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -376,10 +378,10 @@
         </div>
         <div class="brand" id="about">
             <div class="container">
-                <div class="brand__title">
+                <div class="brand__title text-center">
                     <h3>WHY THIS IS AWESOME</h3>
                     <span class="strike brand__strike"></span>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <span class="brand__tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div>
                 <div class="d-flex justify-content-between brand__wrap">
                     <div class="brand__icon px-4">
@@ -459,7 +461,7 @@
                                     placeholder="Password">
                             </div>
                         </div>
-                        <div class="w-50 px-5 mt-4">
+                        <div class="w-50 px-5 mt-4 contact__area">
                             <textarea name="" id="" rows="11" class="w-100 design__1" placeholder="Message"></textarea>
                             <textarea name="" id="" rows="5" class="w-100 design__2 d-none"
                                 placeholder="Message"></textarea>
