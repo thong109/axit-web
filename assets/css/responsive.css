@@ -9,11 +9,15 @@
     }
 
     .hero__form,
-    .hero__text img,
     .features__1,
     .design__1,
     .header__space {
         display: none;
+    }
+
+    .hero__text img {
+        width: 40px;
+        margin-bottom: 5px;
     }
 
     .hero__text,

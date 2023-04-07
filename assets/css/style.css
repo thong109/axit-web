@@ -95,6 +95,10 @@ header .pe-7s-menu {
     line-height: normal;
 }
 
+.hero__text img {
+    width: auto;
+}
+
 .hero__text,
 .hero__form {
     width: 50%;
